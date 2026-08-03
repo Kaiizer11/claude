@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Zeltek — Agence digitale</title>
+<meta name="description" content="Zeltek est une agence digitale qui conçoit des sites, applications et stratégies de croissance sur mesure pour les marques ambitieuses." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Tailwind (precompiled, no CDN dependency) -->
+<link rel="stylesheet" href="tailwind.css" />
+
+<!-- Phosphor Icons -->
+<script src="https://unpkg.com/@phosphor-icons/web" defer></script>
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="font-body text-primary bg-white antialiased">
+
+<a href="#main" class="skip-link">Aller au contenu principal</a>
+
+<!-- ============ HEADER ============ -->
+<header id="header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 border-b border-transparent">
+  <div class="max-w-container mx-auto px-6 lg:px-8 flex items-center justify-between h-20">
+    <a href="#top" class="flex items-center gap-2 font-heading font-bold text-xl tracking-tight text-primary">
+      <span class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-white text-sm font-bold">Z</span>
+      Zeltek
+    </a>
+
+    <nav class="hidden md:flex items-center gap-8" aria-label="Navigation principale">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#work" class="nav-link">Réalisations</a>
+      <a href="#about" class="nav-link">Agence</a>
+      <a href="#testimonials" class="nav-link">Avis</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="hidden md:flex items-center">
+      <a href="#contact" class="btn-primary">Démarrer un projet</a>
+    </div>
+
+    <button id="menu-toggle" class="md:hidden flex items-center justify-center w-11 h-11 -mr-2 text-primary cursor-pointer" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobile-menu">
+      <i class="ph ph-list text-2xl" id="menu-icon"></i>
+    </button>
+  </div>
+
+  <!-- Mobile menu -->
+  <nav id="mobile-menu" class="md:hidden hidden bg-white border-t border-border" aria-label="Navigation mobile">
+    <div class="px-6 py-4 flex flex-col gap-1">
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#work" class="mobile-nav-link">Réalisations</a>
+      <a href="#about" class="mobile-nav-link">Agence</a>
+      <a href="#testimonials" class="mobile-nav-link">Avis</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <a href="#contact" class="btn-primary text-center mt-3">Démarrer un projet</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="relative pt-40 pb-24 lg:pt-52 lg:pb-32 overflow-hidden bg-surface">
+    <div class="absolute inset-0 hero-grid" aria-hidden="true"></div>
+    <div class="relative max-w-container mx-auto px-6 lg:px-8">
+      <div class="max-w-3xl reveal">
+        <span class="inline-flex items-center gap-2 rounded-full border border-border bg-white px-4 py-1.5 text-sm font-medium text-secondary mb-6">
+          <i class="ph-fill ph-sparkle text-accent"></i>
+          Agence digitale full-service
+        </span>
+        <h1 class="font-heading font-bold text-4xl sm:text-5xl lg:text-6xl leading-[1.1] tracking-tight text-primary">
+          Des expériences digitales qui font grandir votre marque.
+        </h1>
+        <p class="mt-6 text-lg sm:text-xl text-muted leading-relaxed max-w-2xl">
+          Zeltek conçoit des sites, produits et stratégies sur mesure pour les marques ambitieuses — du design à la mise en ligne, en passant par la croissance.
+        </p>
+        <div class="mt-10 flex flex-wrap items-center gap-4">
+          <a href="#contact" class="btn-primary text-base px-7 py-3.5">
+            Démarrer un projet
+            <i class="ph ph-arrow-right"></i>
+          </a>
+          <a href="#work" class="btn-secondary text-base px-7 py-3.5">
+            Voir nos réalisations
+          </a>
+        </div>
+      </div>
+
+      <dl class="mt-20 grid grid-cols-2 sm:grid-cols-4 gap-8 border-t border-border pt-10 reveal">
+        <div>
+          <dt class="sr-only">Projets livrés</dt>
+          <dd class="font-heading font-bold text-3xl lg:text-4xl text-primary">120+</dd>
+          <p class="mt-1 text-sm text-muted">Projets livrés</p>
+        </div>
+        <div>
+          <dt class="sr-only">Années d'expérience</dt>
+          <dd class="font-heading font-bold text-3xl lg:text-4xl text-primary">8</dd>
+          <p class="mt-1 text-sm text-muted">Années d'expérience</p>
+        </div>
+        <div>
+          <dt class="sr-only">Clients accompagnés</dt>
+          <dd class="font-heading font-bold text-3xl lg:text-4xl text-primary">65</dd>
+          <p class="mt-1 text-sm text-muted">Clients accompagnés</p>
+        </div>
+        <div>
+          <dt class="sr-only">Satisfaction client</dt>
+          <dd class="font-heading font-bold text-3xl lg:text-4xl text-primary">98%</dd>
+          <p class="mt-1 text-sm text-muted">Satisfaction client</p>
+        </div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ============ LOGOS ============ -->
+  <section class="py-12 border-b border-border" aria-label="Ils nous font confiance">
+    <div class="max-w-container mx-auto px-6 lg:px-8">
+      <p class="text-center text-sm font-medium text-muted mb-8">Ils nous font confiance</p>
+      <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-6 opacity-70">
+        <span class="logo-mark">NORTH&nbsp;WAVE</span>
+        <span class="logo-mark">Lumen</span>
+        <span class="logo-mark">Fabrik</span>
+        <span class="logo-mark">Orbita</span>
+        <span class="logo-mark">Verdant</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="py-24 lg:py-32">
+    <div class="max-w-container mx-auto px-6 lg:px-8">
+      <div class="max-w-2xl mb-16 reveal">
+        <span class="eyebrow">Ce que nous faisons</span>
+        <h2 class="section-title mt-3">Des services conçus pour chaque étape de votre croissance</h2>
+        <p class="mt-4 text-lg text-muted">De la stratégie à l'exécution, notre équipe couvre l'ensemble du parcours digital.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-globe"></i></div>
+          <h3 class="font-heading font-semibold text-lg text-primary mt-5">Web Design &amp; Développement</h3>
+          <p class="mt-2 text-muted text-sm leading-relaxed">Sites vitrines, e-commerce et applications web performantes, pensées pour convertir.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-palette"></i></div>
+          <h3 class="font-heading font-semibold text-lg text-primary mt-5">Identité de marque</h3>
+          <p class="mt-2 text-muted text-sm leading-relaxed">Logo, charte graphique et univers visuel cohérent sur tous vos points de contact.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-device-mobile"></i></div>
+          <h3 class="font-heading font-semibold text-lg text-primary mt-5">Applications mobiles</h3>
+          <p class="mt-2 text-muted text-sm leading-relaxed">Applications iOS &amp; Android natives et cross-platform, de la conception au déploiement.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-chart-line-up"></i></div>
+          <h3 class="font-heading font-semibold text-lg text-primary mt-5">Marketing digital &amp; SEO</h3>
+          <p class="mt-2 text-muted text-sm leading-relaxed">Stratégies d'acquisition, référencement naturel et campagnes qui génèrent des résultats mesurables.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-cursor-click"></i></div>
+          <h3 class="font-heading font-semibold text-lg text-primary mt-5">UI/UX Design</h3>
+          <p class="mt-2 text-muted text-sm leading-relaxed">Recherche utilisateur, wireframes et interfaces soignées, accessibles et centrées produit.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon"><i class="ph ph-headset"></i></div>
+          <h3 class="font-heading font-semibold text-lg text-primary mt-5">Conseil &amp; Stratégie</h3>
+          <p class="mt-2 text-muted text-sm leading-relaxed">Audit digital, roadmap produit et accompagnement stratégique sur le long terme.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK / PORTFOLIO ============ -->
+  <section id="work" class="py-24 lg:py-32 bg-surface">
+    <div class="max-w-container mx-auto px-6 lg:px-8">
+      <div class="max-w-2xl mb-16 reveal">
+        <span class="eyebrow">Nos réalisations</span>
+        <h2 class="section-title mt-3">Des projets qui parlent d'eux-mêmes</h2>
+        <p class="mt-4 text-lg text-muted">Un aperçu de nos collaborations récentes avec des marques de tous secteurs.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="#" class="work-card reveal">
+          <div class="work-thumb work-thumb--1"></div>
+          <div class="p-6">
+            <p class="text-xs font-medium text-accent uppercase tracking-wide">E-commerce</p>
+            <h3 class="font-heading font-semibold text-lg text-primary mt-1">Northwave Store</h3>
+            <p class="mt-1 text-sm text-muted">Refonte e-commerce &amp; hausse de 40% du taux de conversion.</p>
+          </div>
+        </a>
+        <a href="#" class="work-card reveal">
+          <div class="work-thumb work-thumb--2"></div>
+          <div class="p-6">
+            <p class="text-xs font-medium text-accent uppercase tracking-wide">SaaS</p>
+            <h3 class="font-heading font-semibold text-lg text-primary mt-1">Lumen Analytics</h3>
+            <p class="mt-1 text-sm text-muted">Design system &amp; dashboard produit pour une plateforme data.</p>
+          </div>
+        </a>
+        <a href="#" class="work-card reveal">
+          <div class="work-thumb work-thumb--3"></div>
+          <div class="p-6">
+            <p class="text-xs font-medium text-accent uppercase tracking-wide">Mobile</p>
+            <h3 class="font-heading font-semibold text-lg text-primary mt-1">Fabrik App</h3>
+            <p class="mt-1 text-sm text-muted">Application de gestion d'ateliers déployée sur iOS &amp; Android.</p>
+          </div>
+        </a>
+        <a href="#" class="work-card reveal">
+          <div class="work-thumb work-thumb--4"></div>
+          <div class="p-6">
+            <p class="text-xs font-medium text-accent uppercase tracking-wide">Branding</p>
+            <h3 class="font-heading font-semibold text-lg text-primary mt-1">Orbita Rebrand</h3>
+            <p class="mt-1 text-sm text-muted">Identité visuelle complète pour une scale-up spatiale.</p>
+          </div>
+        </a>
+        <a href="#" class="work-card reveal">
+          <div class="work-thumb work-thumb--5"></div>
+          <div class="p-6">
+            <p class="text-xs font-medium text-accent uppercase tracking-wide">Marketing</p>
+            <h3 class="font-heading font-semibold text-lg text-primary mt-1">Verdant Growth</h3>
+            <p class="mt-1 text-sm text-muted">Stratégie d'acquisition multicanal, +65% de leads qualifiés.</p>
+          </div>
+        </a>
+        <a href="#" class="work-card reveal">
+          <div class="work-thumb work-thumb--6"></div>
+          <div class="p-6">
+            <p class="text-xs font-medium text-accent uppercase tracking-wide">Web App</p>
+            <h3 class="font-heading font-semibold text-lg text-primary mt-1">Aria Booking</h3>
+            <p class="mt-1 text-sm text-muted">Plateforme de réservation temps réel pour un réseau hôtelier.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="py-24 lg:py-32">
+    <div class="max-w-container mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+      <div class="reveal">
+        <span class="eyebrow">L'agence</span>
+        <h2 class="section-title mt-3">Une équipe pluridisciplinaire à taille humaine</h2>
+        <p class="mt-5 text-lg text-muted leading-relaxed">
+          Fondée avec la conviction que le bon design résout de vrais problèmes business, Zeltek réunit designers, développeurs et stratèges autour de chaque projet.
+        </p>
+        <p class="mt-4 text-muted leading-relaxed">
+          Nous travaillons en petites équipes dédiées, en toute transparence, pour livrer des produits digitaux qui tiennent leurs promesses — sur le plan visuel comme sur le plan business.
+        </p>
+
+        <div class="mt-10 grid sm:grid-cols-2 gap-6">
+          <div class="flex gap-3">
+            <i class="ph ph-target text-accent text-2xl shrink-0"></i>
+            <div>
+              <h3 class="font-heading font-semibold text-primary">Orientée résultats</h3>
+              <p class="text-sm text-muted mt-1">Chaque décision design est reliée à un objectif mesurable.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <i class="ph ph-handshake text-accent text-2xl shrink-0"></i>
+            <div>
+              <h3 class="font-heading font-semibold text-primary">Partenariat long terme</h3>
+              <p class="text-sm text-muted mt-1">On accompagne nos clients bien après la mise en ligne.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <i class="ph ph-lightning text-accent text-2xl shrink-0"></i>
+            <div>
+              <h3 class="font-heading font-semibold text-primary">Exécution rapide</h3>
+              <p class="text-sm text-muted mt-1">Des cycles courts, des livrables concrets, sans jargon.</p>
+            </div>
+          </div>
+          <div class="flex gap-3">
+            <i class="ph ph-shield-check text-accent text-2xl shrink-0"></i>
+            <div>
+              <h3 class="font-heading font-semibold text-primary">Qualité &amp; accessibilité</h3>
+              <p class="text-sm text-muted mt-1">Chaque livrable respecte les standards WCAG et performance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative reveal">
+        <div class="about-visual"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimonials" class="py-24 lg:py-32 bg-primary text-white">
+    <div class="max-w-container mx-auto px-6 lg:px-8">
+      <div class="max-w-2xl mb-16 reveal">
+        <span class="eyebrow eyebrow--dark">Témoignages</span>
+        <h2 class="section-title section-title--dark mt-3">Ce que nos clients disent de nous</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <blockquote class="testimonial-card reveal">
+          <div class="flex gap-1 text-accent" aria-hidden="true">
+            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+          </div>
+          <p class="mt-4 text-slate-200 leading-relaxed">« Zeltek a complètement transformé notre présence en ligne. Le nouveau site a doublé nos demandes de devis en trois mois. »</p>
+          <footer class="mt-6 flex items-center gap-3">
+            <div class="avatar">CM</div>
+            <div>
+              <p class="font-semibold text-white text-sm">Camille Morel</p>
+              <p class="text-slate-400 text-xs">CEO, Northwave</p>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card reveal">
+          <div class="flex gap-1 text-accent" aria-hidden="true">
+            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+          </div>
+          <p class="mt-4 text-slate-200 leading-relaxed">« Une équipe réactive et à l'écoute. Ils ont su traduire notre vision en une application que nos utilisateurs adorent. »</p>
+          <footer class="mt-6 flex items-center gap-3">
+            <div class="avatar">TD</div>
+            <div>
+              <p class="font-semibold text-white text-sm">Thomas Dubreuil</p>
+              <p class="text-slate-400 text-xs">Fondateur, Fabrik</p>
+            </div>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial-card reveal">
+          <div class="flex gap-1 text-accent" aria-hidden="true">
+            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+          </div>
+          <p class="mt-4 text-slate-200 leading-relaxed">« Un vrai partenaire stratégique, pas juste un prestataire. Le ROI de notre refonte a dépassé nos attentes. »</p>
+          <footer class="mt-6 flex items-center gap-3">
+            <div class="avatar">SL</div>
+            <div>
+              <p class="font-semibold text-white text-sm">Sarah Lambert</p>
+              <p class="text-slate-400 text-xs">CMO, Verdant</p>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="py-20 lg:py-24 border-b border-border">
+    <div class="max-w-container mx-auto px-6 lg:px-8">
+      <div class="cta-banner reveal">
+        <div>
+          <h2 class="font-heading font-bold text-2xl sm:text-3xl text-primary">Un projet en tête ? Parlons-en.</h2>
+          <p class="mt-2 text-muted">Réponse sous 24h ouvrées, sans engagement.</p>
+        </div>
+        <a href="#contact" class="btn-primary shrink-0 text-base px-7 py-3.5">
+          Prendre rendez-vous
+          <i class="ph ph-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="py-24 lg:py-32">
+    <div class="max-w-container mx-auto px-6 lg:px-8 grid lg:grid-cols-5 gap-16">
+      <div class="lg:col-span-2 reveal">
+        <span class="eyebrow">Contact</span>
+        <h2 class="section-title mt-3">Discutons de votre projet</h2>
+        <p class="mt-4 text-lg text-muted">Décrivez-nous votre besoin, nous revenons vers vous rapidement pour en discuter.</p>
+
+        <ul class="mt-10 space-y-5">
+          <li class="flex items-center gap-3">
+            <span class="contact-icon"><i class="ph ph-envelope-simple"></i></span>
+            <a href="mailto:contact@zeltek.agency" class="text-primary font-medium hover:text-accent transition-colors">contact@zeltek.agency</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="contact-icon"><i class="ph ph-phone"></i></span>
+            <a href="tel:+33100000000" class="text-primary font-medium hover:text-accent transition-colors">+33 1 00 00 00 00</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="contact-icon"><i class="ph ph-map-pin"></i></span>
+            <span class="text-primary font-medium">Paris, France</span>
+          </li>
+        </ul>
+      </div>
+
+      <form id="contact-form" class="lg:col-span-3 reveal" novalidate>
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="form-group">
+            <label for="name" class="form-label">Nom complet</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Jeanne Dupont" required autocomplete="name" />
+            <p class="form-error" data-error-for="name"></p>
+          </div>
+          <div class="form-group">
+            <label for="email" class="form-label">Adresse e-mail</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="jeanne@entreprise.com" required autocomplete="email" />
+            <p class="form-error" data-error-for="email"></p>
+          </div>
+        </div>
+        <div class="form-group mt-6">
+          <label for="subject" class="form-label">Sujet</label>
+          <input type="text" id="subject" name="subject" class="form-input" placeholder="Refonte de site web" autocomplete="off" />
+        </div>
+        <div class="form-group mt-6">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" name="message" rows="5" class="form-input resize-none" placeholder="Parlez-nous de votre projet…" required></textarea>
+          <p class="form-error" data-error-for="message"></p>
+        </div>
+        <button type="submit" id="submit-btn" class="btn-primary mt-8 w-full sm:w-auto text-base px-8 py-3.5">
+          <span id="submit-label">Envoyer le message</span>
+          <i class="ph ph-paper-plane-tilt"></i>
+        </button>
+        <p id="form-success" role="status" aria-live="polite" class="mt-4 text-sm font-medium text-emerald-600 hidden">
+          <i class="ph-fill ph-check-circle"></i>
+          Merci ! Votre message a bien été envoyé, nous revenons vers vous rapidement.
+        </p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-primary text-slate-300 pt-16 pb-8">
+  <div class="max-w-container mx-auto px-6 lg:px-8">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div class="lg:col-span-1">
+        <a href="#top" class="flex items-center gap-2 font-heading font-bold text-xl text-white">
+          <span class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center text-white text-sm font-bold">Z</span>
+          Zeltek
+        </a>
+        <p class="mt-4 text-sm text-slate-400 leading-relaxed">Agence digitale full-service : design, développement et croissance pour marques ambitieuses.</p>
+        <div class="flex gap-3 mt-6">
+          <a href="#" class="social-icon" aria-label="Zeltek sur LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+          <a href="#" class="social-icon" aria-label="Zeltek sur Instagram"><i class="ph-fill ph-instagram-logo"></i></a>
+          <a href="#" class="social-icon" aria-label="Zeltek sur X"><i class="ph-fill ph-x-logo"></i></a>
+          <a href="#" class="social-icon" aria-label="Zeltek sur Dribbble"><i class="ph-fill ph-dribbble-logo"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3 class="font-heading font-semibold text-white text-sm uppercase tracking-wide">Services</h3>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li><a href="#services" class="footer-link">Web Design &amp; Développement</a></li>
+          <li><a href="#services" class="footer-link">Identité de marque</a></li>
+          <li><a href="#services" class="footer-link">Applications mobiles</a></li>
+          <li><a href="#services" class="footer-link">Marketing digital</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-heading font-semibold text-white text-sm uppercase tracking-wide">Agence</h3>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li><a href="#about" class="footer-link">À propos</a></li>
+          <li><a href="#work" class="footer-link">Réalisations</a></li>
+          <li><a href="#testimonials" class="footer-link">Avis clients</a></li>
+          <li><a href="#contact" class="footer-link">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="font-heading font-semibold text-white text-sm uppercase tracking-wide">Contact</h3>
+        <ul class="mt-4 space-y-3 text-sm">
+          <li><a href="mailto:contact@zeltek.agency" class="footer-link">contact@zeltek.agency</a></li>
+          <li><a href="tel:+33100000000" class="footer-link">+33 1 00 00 00 00</a></li>
+          <li class="text-slate-400">Paris, France</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-14 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+      <p>&copy; <span id="year"></span> Zeltek. Tous droits réservés.</p>
+      <div class="flex gap-6">
+        <a href="#" class="footer-link">Mentions légales</a>
+        <a href="#" class="footer-link">Confidentialité</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" class="back-to-top" aria-label="Retour en haut de page">
+  <i class="ph ph-arrow-up"></i>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
